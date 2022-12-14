@@ -1,2 +1,2 @@
 console.log("Hello world")
-console.log("I love javascript test tasd asdasd")
+console.log("I love javascript , IT so hard")
