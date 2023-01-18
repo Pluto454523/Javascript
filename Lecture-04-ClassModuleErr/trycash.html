@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch Sample</title>
+</head>
+
+<body>
+    <h2> My first web page </h2>
+    <p> My first Paragraph</p>
+
+
+    <p id="demo"></p>
+
+    <script>
+        try {
+            lalala; //error variable is not defind
+        } catch (err) {
+            alert(err.name); //ReferenceError
+            alert(err.message); //lalala is not defind
+            alert(err.stack);
+            //ReferenceError : lalala is not defined at {...call stack}
+
+            //Can also show an error as a whole 
+            //the error is convertef to string as "name message"
+            alert(err); //ReferenceError lalala is not defind
+        }
+    </script>
+</body>
+
+</html>
