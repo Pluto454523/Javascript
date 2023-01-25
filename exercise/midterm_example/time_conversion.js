@@ -4,7 +4,9 @@ function digitalClock(numTime) {
     const minute = Math.floor(numTime%3600/60) 
     const second = Math.floor(numTime%3600%60)
     
-    return (hour < 9 ? `0${hour}` : hour) + ":" + (minute < 10 ? `0${minute}` : minute) + ":" + (second < 9 ? `0${second}` : second)
+    return (hour < 9 ? `0${hour}` : hour) 
+    + ":" + (minute < 10 ? `0${minute}` : minute) 
+    + ":" + (second < 9 ? `0${second}` : second)
     
 }
 

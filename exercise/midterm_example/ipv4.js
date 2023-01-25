@@ -1,7 +1,7 @@
 function isValideIP(IPAddress) {
     
     for (const seperateIP of IPAddress.split("."))
-        if (seperateIP > 255 || seperateIP[0] <= 0 || IPAddress.split(".").length !== 4)
+        if (IPAddress.split(".").length !== 4 || seperateIP > 255 || seperateIP[0] <= 0)
             return false
     return true
 

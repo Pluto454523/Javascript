@@ -1,12 +1,7 @@
 function getBudgets(array) {
 
     let result = 0
-    array.map(x => 
-        result += x.budget)
-
-    // for(const a of array){
-    //     result += a.budget
-    // }
+    array.map(x => result += x.budget)
     return result
 }
 

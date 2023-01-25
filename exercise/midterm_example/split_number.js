@@ -2,11 +2,6 @@
 //Problem : Give a number, return an array containing the two halves of the number. 
 //if the number is add, make rightmost number highter
 
-//output numberSplit(4) = {2, 2}
-//output numberSplit(10) = {5, 5}
-//output numberSplit(11) = {5, 6}
-//output numberSplit(-9) = {-5 , -4}
-
 function numberSplit(num) {
     
     let lowNum = Math.floor(num / 2);
