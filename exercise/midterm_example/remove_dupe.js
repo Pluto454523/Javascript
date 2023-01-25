@@ -1,12 +1,15 @@
 //remove dupicale form array
 
-function removeDupe(array) {
+function removeDupe(arrayDupe) {
 
-    array.map((x,index) =>
-        array.includes(array[index+1]) ? array.pup(index) : null
-    )
+    return arrayDupe.filter( 
+        function (element, index, array) {
+            return array.indexOf(element) == index;
+    });
+
 }
 
-removeDupe([1,0,1,0]) // {1,0}
-removeDupe(["The","Big","Cat"]) // {"The","Big","Cat"}
-removeDupe(["John","Taylor","John"]) // {"John","Taylor"}
+console.log(removeDupe([1,0,1,0])) // {1,0}
+console.log(removeDupe(["The","Big","Cat"])) // {"The","Big","Cat"}
+console.log(removeDupe(["John","Taylor","John"])) // {"John","Taylor"}
+
