@@ -3,10 +3,10 @@
 
 function capToFront(str) {
 
-    let s1 = "" , s2 = ""
-    for (const s of str)
-        (s.toUpperCase() === s) ? s1 += s : s2 += s;
-    return s1 + s2
+    let sUpper = "" , sLowwer = ""
+    for (const strChar of str)
+        (strChar.toUpperCase() === strChar) ? sUpper += s : sLowwer += s;
+    return sUpper + sLowwer
 }
 
 console.log( capToFront("hApPy") );
