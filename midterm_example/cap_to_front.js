@@ -5,7 +5,7 @@ function capToFront(str) {
 
     let sUpper = "" , sLowwer = ""
     for (const strChar of str)
-        (strChar.toUpperCase() === strChar) ? sUpper += s : sLowwer += s;
+        (strChar.toUpperCase() === strChar) ? sUpper += strChar : sLowwer += strChar;
     return sUpper + sLowwer
 }
 
