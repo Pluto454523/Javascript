@@ -1,21 +1,21 @@
 function checkPassword(password) {
 
     let result = ""
-    const special   = "!@#$%^&*+=._-"
+    const special = "!@#$%^&*+=._-"
 
     if ( password.length < 8) 
         result += "Password must be at least 8 characters long.";
 
-    if ( !password.split('').some(char => char >= 'A' && char <= 'Z') )
+    if ( !password.split('').some( char => char >= 'A' && char <= 'Z') )
         result += "Password not contain uppercase letter. "
 
-    if ( !password.split('').some(char => char >= 'a' && char <= 'z') )
+    if ( !password.split('').some( char => char >= 'a' && char <= 'z') )
         result += "Password not contain lowercase letter. "
     
-    if ( !password.split('').some(char => char >= '0' && char <= '9') )
+    if ( !password.split('').some( char => char >= '0' && char <= '9') )
         result += "Password not contain number. "
 
-    if ( !password.split('').some(char => special.includes(char)) )
+    if ( !password.split('').some( char => special.includes(char)) )
         result += "Password not contain special character. "
 
     if ( password.includes(" ") )
@@ -30,7 +30,7 @@ function checkPassword(password) {
         console.log(`Password ${password} is not vailid. ${result}`);
 }
 
-checkPassword("AAAAeeee123456@")
-// checkPassword("1234567@8")
-// checkPassword("1234567@AA80@")
-// checkPassword("1234567@Az8")
+checkPassword("aaaaaaaaBB")
+checkPassword("1234567@Ae8")
+checkPassword("1234567@80@")
+checkPassword("1234567@Az8")
