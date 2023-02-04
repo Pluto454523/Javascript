@@ -7,7 +7,7 @@ function sumTwoSmallestNums(array) {
     // ** Way 1 */
     array = array.filter(element => element > 0)
     let result = Math.min(...array)
-    result += Math.min(...array.filter((element) => element > result))
+    result += Math.min(...array.filter(element => element > result))
 
     return result
 
