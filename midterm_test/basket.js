@@ -1,7 +1,5 @@
 function calProductPrice(obj) {
 
-    // console.log(obj.customer);
-    // console.log(obj.items);
     let totalPrice = 0
     let totalDiscount = 0
     let finalPrice = 0
