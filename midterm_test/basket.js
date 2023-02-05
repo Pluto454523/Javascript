@@ -3,10 +3,16 @@ function calProductPrice(obj) {
     let totalPrice = 0
     let totalDiscount = 0
     let finalPrice = 0
-    for (const item of obj.items) {
-        totalPrice += item.price
-        totalDiscount += totalPrice*item.discount
-    }
+
+    obj.items.map((x) => {
+        totalPrice += x.price
+        totalDiscount += x.discount
+    })
+
+    // for (const item of obj.items) {
+    //     totalPrice += item.price
+    //     totalDiscount += totalPrice*item.discount
+    // }
 
     finalPrice += totalPrice-totalDiscount
 
