@@ -1,7 +1,7 @@
 function checkPassword(password) {
 
     let result = ""
-    const special = "!@#$%^&*+=._-"
+    const special = "!@#$%^&*+=._-aa"
 
     if ( password.length < 8) 
         result += "Password must be at least 8 characters long.";
