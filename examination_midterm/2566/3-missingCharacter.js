@@ -4,15 +4,12 @@ function missingCharacter(str) {
     const characters = "abcdefghijklmnopqrstuvwxyz"
     let indexChar
     let result = ""
-    
 
     for (let i = 0; i < characters.length; i++) {
         if (str[0] == characters[i]) {
             indexChar = i
         }
-        
     }
-
 
     for (let i = 0; i < str.length; i++) {
         if (str[i] === characters[indexChar]) {

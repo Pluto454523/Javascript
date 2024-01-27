@@ -1,4 +1,4 @@
-function convertData(startDateTime, endDateTime) {
+function differenceTime(startDateTime, endDateTime) {
 
     const startDate = new Date(startDateTime);
     const endDate = new Date(endDateTime);
@@ -11,5 +11,5 @@ function convertData(startDateTime, endDateTime) {
     return `${hours} Hrs, ${minutes} Min`;
 }
 
-console.log(convertData("July-19-2019 13:30", "July-20-2019 09:30")); // 21 Hrs, 0 Min
-console.log(convertData("July-29-2019 13:15", "June-1-2020 14:40")); // 7393 Hrs, 25 Min
+console.log(differenceTime("July-19-2019 13:30", "July-20-2019 09:30")); // 21 Hrs, 0 Min
+console.log(differenceTime("July-29-2019 13:15", "June-1-2020 14:40")); // 7393 Hrs, 25 Min
