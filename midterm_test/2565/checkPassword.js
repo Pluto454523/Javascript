@@ -21,7 +21,7 @@ function checkPassword(password) {
     if ( password.includes(" ") )
         result += "Password not contain space. "
 
-    if ( password.startsWith(...special) || password.endsWith(...special) )
+    if ( special.split('').some( char => password.startsWith(char) || password.endsWith(char)) )
         result += "Password start and end by special character. "
 
     if (result.isEmpty || result === "")
@@ -30,7 +30,7 @@ function checkPassword(password) {
         console.log(`Password ${password} is not vailid. ${result}`);
 }
 
-checkPassword("aaaaaaaaBB")
+checkPassword("aaaaa@aaaBB@")
 checkPassword("1234567@Ae8")
 checkPassword("1234567@80@")
 checkPassword("1234567@Az8")

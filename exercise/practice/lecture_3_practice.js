@@ -23,5 +23,5 @@ function practice2() {
     
 }
 
-// practice1()
-practice2()
+practice1()
+// practice2()
