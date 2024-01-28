@@ -13,4 +13,4 @@ function cycleFirstChar(word) {
 }
 
 console.log(cycleFirstChar("123")); // 123 213 321
-console.log(cycleFirstChar("98765")) // 98765 89765 87965 87695 87659" 
+console.log(cycleFirstChar("98765")) // 98765 89765 87965 87695 87659
