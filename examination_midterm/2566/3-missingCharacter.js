@@ -16,18 +16,16 @@ function missingCharacter(str) {
             indexChar++
         } else {
             result += characters[indexChar]
-            if (str[i] === characters[indexChar+1]) {
+            if ( str[i] === characters[indexChar+1] ) {
                 indexChar++
             }
             indexChar++
-            
         }
-
-        
     }
 
     //? ถ้า result ไม่มีค่า หรือเป็น "" จะ return "no missing letter"
     return result || "no missing letter"
+
 }
 
 

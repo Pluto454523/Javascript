@@ -11,7 +11,7 @@ function calFruits(basket) {
         }
     }
 
-    return `most fruit '${mostFruit.name}' quanlity ${mostFruit.quantity}\nall fruit`
+    return `most fruit '${mostFruit.name}' quanlity ${mostFruit.quantity}\nall fruit ${totalQuantity}`
 }
 
 
